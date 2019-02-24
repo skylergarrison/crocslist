@@ -13,7 +13,10 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use Boostrap for responsiveness and navigation bar
-gem 'bootstrap-sass', '~> 3.3.7'
+#gem "bootstrap-sass", ">= 3.4.1"
+# rake required to install boostrap-sass
+gem "rake"
+#gem "sassc", '~>2.0.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use jQuery for Bootstrap
@@ -36,6 +39,11 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem "nokogiri", ">= 1.8.5"
+gem "rack", ">= 2.0.6"
+gem "loofah", ">= 2.2.3"
+#gem "rubyzip", ">= 1.2.2"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
